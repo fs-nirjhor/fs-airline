@@ -11,43 +11,346 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   </head>
-  <body>
+  <body class="bg-fuchsia-50">
     <header
       class="bg-[url('./images/photo12.jpg')] bg-cover bg-no-repeat bg-center"
     >
-      <div class="bg-fuchsia-800/80 pb-96">
+      <div class="bg-fuchsia-800/80 pb-72">
         <nav class="section-width flex justify-between items-center py-5">
           <img
             class="h-14 text-white"
             src="./images/fs-airline.svg"
             alt="logo"
           />
-          <div class="flex justify-between items-center gap-5 text-white text-xl text-bold">
-            <a class="hover:text-cyan-500">Home</a>
-            <a class="hover:text-cyan-500">About</a>
-            <a class="hover:text-cyan-500">Pages</a>
-            <a class="hover:text-cyan-500">Blog</a>
-            <a class="hover:text-cyan-500">Contact</a>
-            <span class="hover:text-cyan-500">USD 
+          <div class="flex justify-between items-center gap-5 text-white body-txt font-bold">
+            <a class="hover:color-txt">Home</a>
+            <a class="hover:color-txt">About</a>
+            <a class="hover:color-txt">Pages</a>
+            <a class="hover:color-txt">Blog</a>
+            <a class="hover:color-txt">Contact</a>
+            <span class="hover:color-txt">USD 
             </span>
             <img class="h-8" src="./images/usa.png" alt="usa" />
-            <a class="hover:text-cyan-500"><i class="bi bi-question-circle text-3xl"></i></a>
+            <a class="hover:color-txt"><i class="bi bi-question-circle text-3xl"></i></a>
             <button class="btn">Register</button>
             <button class="btn">Login</button>
           </div>
         </nav>
         <section class="section-width py-20 text-white">
-          <h1 class="text-5xl font-bold capitalize mb-3">
+          <h1 class="text-7xl font-bold capitalize mb-3">
             A Lifetime of Discounts? it's genius.
           </h1>
-          <p class="text-xl w-1/2">
+          <p class="body-txt w-1/2">
             Get rewarded to your travel - Unlock instant savage of 10% or more
             with a free Fsairline.com account
           </p>
           <button class="btn mt-5">Sign in/ Register</button>
         </section>
       </div>
-      
     </header>
+    
+    <!-- Booking Chart -->
+    <section id="booking" class="section-width -mt-48 shadow-md body-txt">
+      <div class="flex justify-start gap-10 body-txt font-bold text-white">
+        <span><i class="bi bi-airplane mr-2 rotate-90 inline-block"></i> Flights</span>
+        <span><i class="bi bi-car-front-fill mr-2"></i> Car Rentals</span>
+        <span><i class="bi bi-magnet mr-2"></i> Attractions</span>
+        <span><i class="bi bi-taxi-front-fill mr-2"></i> Airport Taxis</span>
+      </div>
+      <div class="rounded-3xl bg-white overflow-hidden mt-5 color-txt">
+        <div class="grid grid-cols-4 gap-0 ">
+        <button class="navigation-btn"><i class="bi bi-airplane mr-2 rotate-90 inline-block"></i> AIR BOOKING</button>
+        <button class="navigation-btn"><i class="bi bi-file-earmark-text mr-2"></i> MY TRIPS</button>
+        <button class="navigation-btn"><i class="bi bi-check-circle mr-2"></i> CHECK IN</button>
+        <button class="navigation-btn"><i class="bi bi-geo-alt mr-2"></i> FLIGHT STATUS</button>
+        </div>
+        <div class="p-10">
+          <div class="inline-block text-end">
+          <p >Just from $12</p>
+          <p class="font-bold">Flights <i class="bi bi-dash-lg rotate-90 inline-block mx-1"></i> Fsairline stopover</p>
+          </div>
+          <div class="my-10 bg-fuchsia-100 grid grid-cols-5 gap-0 rounded-lg">
+            <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-fuchsia-100 color-txt border-4"/>
+            <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-fuchsia-100 color-txt border-4"/>
+            <div class="p-5 border-4">
+              <p class="color-txt">Trip</p>
+             <p class="flex justify-between mt-3 text-black">
+               <span>Tour Type</span>
+               <i class="bi bi-chevron-down"></i>
+             </p>
+            </div>
+            <div class="p-5 border-4 flex justify-between gap-3">
+              <div>
+                <p >Depart</p>
+                <p class="text-black mt-3">07-09-2023</p>
+              </div>
+              <i class="bi bi-dash-lg text-black self-center"></i>
+              <div>
+                <p >Return</p>
+                <p class="text-black mt-3">07-09-2023</p>
+              </div>
+            </div>
+            <div class="p-5 border-4">
+              <div>
+                <p >Passenger/Class</p>
+                <p class="text-black mt-3">1 Passenger, Economy</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end items-center gap-5">
+            <p class="font-semibold"><i class="bi bi-plus-lg mr-1"></i> Add Promo Code</p>
+            <button class="btn">Show Flight <i class="bi bi-airplane ml-2 rotate-90 inline-block"></i></button>
+          </div>
+        </div>
+          
+        </div>
+    </section>
+    
+    <!-- contact --> 
+    <section id="contact" class="mt-20 section-width grid grid-cols-3 gap-10 body-txt text-black">
+      <div class="p-10 shadow-md flex gap-10 bg-white rounded-3xl items-center">
+        <i class="bi bi-patch-question text-6xl color-txt"></i>
+        <div >
+          <p class="sub-header font-bold mb-2"> We are now available</p>
+          <p>Call +8801687979999 for contact us</p>
+        </div>
+      </div>
+      <div class="p-10 shadow-md flex gap-10 bg-white rounded-3xl items-center">
+        <i class="bi bi-airplane rotate-45 inline-block text-6xl color-txt"></i>
+        <div >
+          <p class="sub-header font-bold mb-2">International Flight</p>
+          <p>Call +8801687978888 for booking assistance</p>
+        </div>
+      </div>
+      <div class="p-10 shadow-md flex gap-10 bg-white rounded-3xl items-center">
+        <i class="bi bi-coin text-6xl color-txt"></i>
+        <div >
+          <p class="sub-header font-bold mb-2">Check Refund</p>
+          <p>Call +8801687974444 for check refund status</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- offer deals -->
+    <section id="offer" class="mt-20 section-width">
+      <div class="flex justify-between items-center">
+        <div class="">
+      <h3 class="text-violet-600 sub-header uppercase font-mono">OFFER DEALS</h3>
+      <h2 class="section-header mt-3">Flight Offer Deals</h2>
+        </div>
+        <h6 class="sub-header capitalize color-txt font-bold">Best Price Guarantee <i class="bi bi-check-circle"></i></h6>
+      </div>
+      <div class="grid grid-cols-2 mt-20 gap-10">
+        <div class="col-span-1 rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
+          <img class="object-cover h-full" src="./images/photo7.jpg" alt="..." />
+          <div class="p-5">
+          <h4 class="sub-header">Dhaka to Dubai</h4>
+          <p class="body-txt color-txt mt-1">26 July 2023 - 5 August 2023</p>
+          <p class="body-txt color-txt mt-5">Economy Form</p>
+          <h4 class="sub-header mt-1"><i class="bi bi-currency-dollar mr-1"></i>980</h4>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <div class="grid grid-cols-2 gap-10">
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
+          <img class="object-cover" src="./images/photo7.jpg" alt="..." />
+          <div class="p-5">
+          <h4 class="sub-header">Dhaka to Dubai</h4>
+          <p class="body-txt color-txt mt-1">26 July 2023 - 5 August 2023</p>
+          <p class="body-txt color-txt mt-5">Economy Form</p>
+          <h4 class="sub-header mt-1"><i class="bi bi-currency-dollar mr-1"></i>980</h4>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
+          <img class="object-cover" src="./images/photo7.jpg" alt="..." />
+          <div class="p-5">
+          <h4 class="sub-header">Dhaka to Dubai</h4>
+          <p class="body-txt color-txt mt-1">26 July 2023 - 5 August 2023</p>
+          <p class="body-txt color-txt mt-5">Economy Form</p>
+          <h4 class="sub-header mt-1"><i class="bi bi-currency-dollar mr-1"></i>980</h4>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
+          <img class="object-cover" src="./images/photo7.jpg" alt="..." />
+          <div class="p-5">
+          <h4 class="sub-header">Dhaka to Dubai</h4>
+          <p class="body-txt color-txt mt-1">26 July 2023 - 5 August 2023</p>
+          <p class="body-txt color-txt mt-5">Economy Form</p>
+          <h4 class="sub-header mt-1"><i class="bi bi-currency-dollar mr-1"></i>980</h4>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
+          <img class="object-cover" src="./images/photo7.jpg" alt="..." />
+          <div class="p-5">
+          <h4 class="sub-header">Dhaka to Dubai</h4>
+          <p class="body-txt color-txt mt-1">26 July 2023 - 5 August 2023</p>
+          <p class="body-txt color-txt mt-5">Economy Form</p>
+          <h4 class="sub-header mt-1"><i class="bi bi-currency-dollar mr-1"></i>980</h4>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <!--  great destination --> 
+   <section id="destination" class="mt-20 bg-[url('./images/photo4.jpg')] bg-cover bg-no-repeat bg-center text-start">
+     <div class="bg-gradient-to-r from-cyan-600 via-cyan-600">
+     <div class="section-width py-20">
+       <h3 class="sub-header font-mono uppercase text-white bg-violet-600 px-5 py-2 rounded-full inline-block">OFFER DEALS</h3>
+       <h2 class="section-header text-white mt-2 capitalize">Your Great Destination</h2>
+       <p class="body-txt text-white w-1/2 mt-5">
+            Get rewarded to your travel - Unlock instant savage of 10% or more
+            with a free <a class="text-violet-600">Fsairline.com</a> account
+          </p>
+          <div class="my-10 flex justify-start gap-10">
+            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-24">
+              <div>
+                <h1 class="text-7xl font-extrabold mb-2">5830+</h1>
+                <p class="body-txt color-txt capitalize">Happy Customers</p>
+              </div>
+              <i class="bi bi-people-fill text-8xl color-txt"></i>
+            </div>
+            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-24">
+              <div>
+                <h1 class="text-7xl font-extrabold mb-2">100%</h1>
+                <p class="body-txt color-txt capitalize">Satisfy Client</p>
+              </div>
+              <i class="bi bi-globe text-8xl color-txt"></i>
+            </div>
+          </div>
+          <p class="body-txt text-white">Discover the latest offers & news and start planning <button class="sub-header font-mono uppercase text-white bg-violet-600 px-5 py-2 ml-2 rounded-full align-middle">Contact</button></p>
+     </div>
+     </div>
+   </section>
+   
+   <!-- package --> 
+   <section id="package" class="mt-20 text-center">
+     <h4 class="sub-header font-mono text-violet-600 uppercase">
+       Flynext Package 
+     </h4>
+     <h2 class="section-header my-3">Your Great Destination</h2>
+     <div class="flex justify-center gap-5 my-10">
+       <button class="btn">Flight</button>
+       <button class="btn">Car Rentals</button>
+       <button class="btn">Taxis</button>
+     </div>
+     <div class="section-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 color-txt">
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+         <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md p-5">
+          <img class="object-cover rounded-xl" src="./images/photo7.jpg" alt="..." />
+          <div class="py-5 border-b-2 border-cyan-600">
+          <p class="body-txt mb-2">26 July 2023 - 5 August 2023</p>
+          <h4 class="sub-header font-bold mb-2">Dubai (DXB)</h4>
+          <p class="sub-header mb-2"><i class="bi bi-arrow-left-right"></i></p>
+          <h4 class="sub-header font-bold mb-2">New York (USA)</h4>
+          <button class="btn px-3 py-1"><i class="bi bi-airplane-fill rotate-90 inline-block"></i></button>
+          </div>
+          <div class="py-5 text-start">
+            <p class="body-txt">Economy form</p>
+          <h4 class="sub-header text-black font-bold"><i class="bi bi-currency-dollar"></i>195</h4>
+          </div>
+        </div>
+     </div>
+   </section>
+   
+   <div class="my-96 py-96"></div>
   </body>
 </html>
