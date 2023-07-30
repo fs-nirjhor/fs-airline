@@ -10,13 +10,16 @@
     @apply px-5 py-4 rounded-md font-bold text-center uppercase bg-gradient-to-r from-emerald-500 to-violet-500 text-white hover:from-pink-500 hover:to-yellow-500 font-bold;
   }
   .navigation-btn {
-    @apply bg-cyan-500 hover:bg-white text-white hover:text-cyan-500 text-2xl font-bold py-5 uppercase border-b-2;
+    @apply bg-cyan-500 hover:bg-white text-white hover:text-cyan-500 text-xl font-bold px-1 py-5 uppercase border-b-2;
   }
   .body-txt {
     @apply text-xl;
   }
   .color-txt {
     @apply text-cyan-800 placeholder-cyan-800;
+  }
+  .light-color-txt {
+    @apply text-cyan-300;
   }
   .secondary-color-txt {
     @apply text-violet-600;

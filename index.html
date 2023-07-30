@@ -17,7 +17,7 @@
     <header class="bg-slate-800 py-10">
       <div class="section-width flex flex-col lg:flex-row justify-between items-center body-txt text-slate-200 gap-10">
         <p class="">
-         <i class="bi bi-airplane-engines-fill rotate-90 mr-2 inline-block text-cyan-300"></i>
+         <i class="bi bi-airplane-engines-fill rotate-90 mr-2 inline-block light-color-txt"></i>
           FS Airline Update & Travel Requirements 
         </p>
         <div class="flex gap-3 justify-center flex-wrap">
@@ -41,24 +41,44 @@
       class="bg-[url('./images/photo2.jpg')] bg-cover bg-no-repeat bg-center"
     >
       <div class="bg-purple-800/80 pb-72">
-        <nav class="section-width flex justify-between items-center py-5">
+        <nav class="section-width py-5 flex justify-between items-center">
           <img
             class="h-14 text-white"
             src="./images/fs-airline.svg"
             alt="logo"
           />
           <div class="flex justify-between items-center gap-5 text-white body-txt font-bold">
-            <a class="hover:color-txt">Home</a>
-            <a class="hover:color-txt">About</a>
-            <a class="hover:color-txt">Pages</a>
-            <a class="hover:color-txt">Blog</a>
-            <a class="hover:color-txt">Contact</a>
-            <span class="hover:color-txt">USD 
+            <div class="hidden lg:flex justify-between items-center gap-5">
+            <a class="hover:light-color-txt">Home</a>
+            <a class="hover:light-color-txt">About</a>
+            <a class="hover:light-color-txt">Pages</a>
+            <a class="hover:light-color-txt">Blog</a>
+            <a class="hover:light-color-txt">Contact</a>
+            </div>
+            <div class="hidden md:flex justify-between items-center gap-5">
+            <span class="hover:light-color-txt">USD 
             </span>
             <img class="h-8" src="./images/usa.png" alt="usa" />
-            <a class="hover:color-txt"><i class="bi bi-question-circle text-3xl"></i></a>
+            <a class="hover:light-color-txt"><i class="bi bi-question-circle text-3xl"></i></a>
+            </div>
+            <div class="hidden lg:flex justify-between items-center gap-5">
             <button class="btn">Register</button>
             <button class="btn">Login</button>
+            </div>
+            <details class="lg:hidden">
+              <summary class="list-none sub-header">
+                <i class="bi bi-list"></i>
+              </summary>
+              <div class="absolute top-0 end-0 body-txt bg-white text-black p-10 h-screen shadow-xl">
+                <div class="flex flex-col gap-5">
+            <a class="hover:light-color-txt">Home</a>
+            <a class="hover:light-color-txt">About</a>
+            <a class="hover:light-color-txt">Pages</a>
+            <a class="hover:light-color-txt">Blog</a>
+            <a class="hover:light-color-txt">Contact</a>
+            </div>
+                </div>
+            </details>
           </div>
         </nav>
         <section class="section-width py-20 text-white">
@@ -75,26 +95,26 @@
     </section>
     
     <!-- Booking Chart -->
-    <section id="booking" class="section-width -mt-48 shadow-md body-txt">
-      <div class="flex justify-start gap-10 body-txt font-bold text-white">
+    <section id="booking" class="section-width -mt-48 z-10 shadow-md body-txt">
+      <div class="flex flex-wrap justify-start gap-10 body-txt font-bold text-white">
         <span><i class="bi bi-airplane mr-2 rotate-90 inline-block"></i> Flights</span>
         <span><i class="bi bi-car-front-fill mr-2"></i> Car Rentals</span>
         <span><i class="bi bi-magnet mr-2"></i> Attractions</span>
         <span><i class="bi bi-taxi-front-fill mr-2"></i> Airport Taxis</span>
       </div>
       <div class="rounded-3xl bg-white overflow-hidden mt-5 color-txt">
-        <div class="grid grid-cols-4 gap-0 ">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-0 ">
         <button class="navigation-btn"><i class="bi bi-airplane mr-2 rotate-90 inline-block"></i> AIR BOOKING</button>
         <button class="navigation-btn"><i class="bi bi-file-earmark-text mr-2"></i> MY TRIPS</button>
         <button class="navigation-btn"><i class="bi bi-check-circle mr-2"></i> CHECK IN</button>
         <button class="navigation-btn"><i class="bi bi-geo-alt mr-2"></i> FLIGHT STATUS</button>
         </div>
-        <div class="p-10">
+        <div class="p-8">
           <div class="inline-block text-end">
           <p >Just from $12</p>
           <p class="font-bold">Flights <i class="bi bi-dash-lg rotate-90 inline-block mx-1"></i> Fsairline stopover</p>
           </div>
-          <div class="my-10 bg-purple-100 grid grid-cols-5 gap-0 rounded-lg">
+          <div class="my-8 bg-purple-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-0 rounded-lg">
             <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-purple-100 color-txt border-4"/>
             <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-purple-100 color-txt border-4"/>
             <div class="p-5 border-4">
@@ -104,7 +124,7 @@
                <i class="bi bi-chevron-down"></i>
              </p>
             </div>
-            <div class="p-5 border-4 flex justify-between gap-3">
+            <div class="p-5 border-4 flex justify-around gap-3 md:col-span-2">
               <div>
                 <p >Depart</p>
                 <p class="text-black mt-3">07-09-2023</p>
@@ -132,7 +152,7 @@
     </section>
     
     <!-- contact --> 
-    <section id="contact" class="mt-20 section-width grid grid-cols-3 gap-10 body-txt text-black">
+    <section id="contact" class="mt-20 section-width grid grid-cols-1 lg:grid-cols-3 gap-10 body-txt text-black">
       <div class="p-10 shadow-md flex gap-10 bg-white rounded-3xl items-center">
         <i class="bi bi-signal text-6xl color-txt"></i>
         <div >
@@ -515,35 +535,35 @@
          <h3 class="sub-header font-bold my-10">Explore</h3>
          <div class="flex gap-10 text-slate-200 body-txt">
            <div class="flex flex-col gap-5">
-             <a class="hover:text-cyan-300 hover:translate-x-2">About us</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Awards</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Careers</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Press Release</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Sponsorship</a>
+             <a class="hover:light-color-txt hover:translate-x-2">About us</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Awards</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Careers</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Press Release</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Sponsorship</a>
          </div>
            <div class="flex flex-col gap-5">
-             <a class="hover:text-cyan-300 hover:translate-x-2">Travel alerts</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Qatarisation</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Beyond</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Press Release</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Airways Cargo</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Travel alerts</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Qatarisation</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Beyond</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Press Release</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Airways Cargo</a>
          </div>
          </div>
        </div>
        <div>
          <h3 class="sub-header font-bold my-10">Privacy</h3>
            <div class="flex flex-col gap-5 text-slate-200 body-txt">
-             <a class="hover:text-cyan-300 hover:translate-x-2">Airline fees</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Airline guides</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Low fare tips</a>
-             <a class="hover:text-cyan-300 hover:translate-x-2">Flights</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Airline fees</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Airline guides</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Low fare tips</a>
+             <a class="hover:light-color-txt hover:translate-x-2">Flights</a>
          </div>
          </div>
        <div>
          <h3 class="sub-header font-bold my-10">Contacts</h3>
          <p class="text-slate-200 body-txt">PO Box W75 Street lan West new queens</p>
-         <p class="sub-header font-bold text-cyan-300 my-10"><a href="tel:121" >+1246 333 - 0079</a></p>
-         <p class="text-cyan-300 body-txt"><a href="mailto: fsnirjhor2002@gmail.com?subject=fs-airline">fsairline@company.com</a></p>
+         <p class="sub-header font-bold light-color-txt my-10"><a href="tel:121" >+1246 333 - 0079</a></p>
+         <p class="light-color-txt body-txt"><a href="mailto: fsnirjhor2002@gmail.com?subject=fs-airline">fsairline@company.com</a></p>
         <div class="flex flex-nowrap gap-0 mt-10">
           <input type="email" name="email" placeholder="Enter your email" class="p-5 body-txt">
           <button class="btn bg-cyan-400 rounded-none sub-header"><i class="bi bi-send"></i></button>
