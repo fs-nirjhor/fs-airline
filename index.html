@@ -122,15 +122,17 @@
           <p >Just from $12</p>
           <p class="font-bold">Flights <i class="bi bi-dash-lg rotate-90 inline-block mx-1"></i> Fsairline stopover</p>
           </div>
-          <div class="my-8 bg-purple-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-0 rounded-lg">
-            <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-purple-100 color-txt border-4"/>
-            <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-purple-100 color-txt border-4"/>
+          <div class="my-8 bg-purple-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-0 rounded-lg body-txt">
+            <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-purple-100 color-txt body-txt border-4"/>
+            <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-purple-100 color-txt body-txt border-4"/>
             <div class="p-5 border-4">
               <p class="color-txt">Trip</p>
-             <p class="flex justify-between mt-3 text-black">
-               <span>Tour Type</span>
-               <i class="bi bi-chevron-down"></i>
-             </p>
+              <select name="type" class="mt-3 py-2 bg-transparent focus:outline-none text-black">
+  <option value="">Tour Type</option>
+  <option value="adventure">Family Tour</option>
+  <option value="newest">Newest Item</option>
+  <option value="nuture&wild">Nature and Wildlife</option>
+</select>
             </div>
             <div class="p-5 border-4 flex justify-around gap-3 md:col-span-2">
               <div>
@@ -512,7 +514,7 @@
          <img class="object-cover w-full h-full transition ease-in-out group-hover:scale-105 duration-300" src="./images/photo5.jpg" alt="..." />
          <div class="absolute w-full bottom-0 text-white p-10 text-start">
            <div class="flex justify-start gap-10">
-             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
+             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p> <p>|</p> 
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="section-header text-white">Depending on your departure point and destination flight</p>
@@ -525,7 +527,7 @@
          </div>
          <div class="">
            <div class="flex justify-center md:justify-start gap-10">
-             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
+             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p> <p>|</p> 
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="sub-header font-bold">Depending on your departure point and destination flight</p>
@@ -537,7 +539,7 @@
          </div>
          <div class="">
            <div class="flex justify-center md:justify-start gap-10">
-             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
+             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p> <p>|</p> 
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="sub-header font-bold">Depending on your departure point and destination flight</p>
@@ -549,7 +551,7 @@
          </div>
          <div class="">
            <div class="flex justify-center md:justify-start gap-10">
-             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
+             <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p> <p>|</p> 
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="sub-header font-bold">Depending on your departure point and destination flight</p>
