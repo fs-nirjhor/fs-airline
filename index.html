@@ -14,23 +14,23 @@
   <body class="bg-cyan-50 selection:bg-fuchsia-100 selection:text-fuchsia-600 select-none">
     
     <!-- header -->
-    <header class="bg-slate-800 py-10">
-      <div class="section-width flex flex-col lg:flex-row justify-between items-center body-txt text-slate-200 gap-10">
+    <header class="bg-slate-800 py-5">
+      <div class="section-width flex flex-col lg:flex-row justify-between items-center body-txt text-slate-200 gap-5">
         <p class="">
          <i class="bi bi-airplane-engines-fill rotate-90 mr-2 inline-block light-color-txt"></i>
           FS Airline Update & Travel Requirements 
         </p>
         <div class="flex gap-3 justify-center flex-wrap">
           <a>Corporate Club</a>
-          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-three-dots-vertical opacity-75"></i>
           <a>Miles&Smiles</a>
-          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-three-dots-vertical opacity-75"></i>
           <a><i class="bi bi-wechat"></i> Feedback</a>
-          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-three-dots-vertical opacity-75"></i>
           <a><i class="bi bi-search mr-1"></i> Search</a>
-          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-three-dots-vertical opacity-75"></i>
           <a><i class="bi bi-currency-dollar mr-1"></i> Currency</a>
-          <i class="bi bi-three-dots-vertical"></i>
+          <i class="bi bi-three-dots-vertical opacity-75"></i>
           <a><i class="bi bi-globe mr-1"></i> EN - INT</a>
         </div>
       </div>
@@ -70,19 +70,27 @@
                 <i class="bi bi-list"></i>
               </summary>
               <div class="absolute top-0 end-0 body-txt bg-white text-black p-10 h-screen shadow-xl">
-                <div class="flex flex-col gap-5">
-            <a class="hover:light-color-txt">Home</a>
-            <a class="hover:light-color-txt">About</a>
-            <a class="hover:light-color-txt">Pages</a>
-            <a class="hover:light-color-txt">Blog</a>
-            <a class="hover:light-color-txt">Contact</a>
+                <div class="flex flex-col gap-5 divide-y-2">
+                  <img src="./images/fs-airline-black.svg" alt="logo" class="h-14 mb-5">
+            <a class="hover:light-color-txt pt-5">Home</a>
+            <a class="hover:light-color-txt pt-5">About</a>
+            <a class="hover:light-color-txt pt-5">Pages</a>
+            <a class="hover:light-color-txt pt-5">Blog</a>
+            <a class="hover:light-color-txt pt-5">Contact</a>
+           <p class="flex gap-5 py-5">
+             <a class="border rounded-md p-2"><i class="bi bi-twitter"></i></a>
+             <a class="border rounded-md p-2"><i class="bi bi-facebook"></i></a>
+             <a class="border rounded-md p-2"><i class="bi bi-pinterest"></i></a>
+             <a class="border rounded-md p-2"><i class="bi bi-instagram"></i></a>
+             <a class="border rounded-md p-2"><i class="bi bi-youtube"></i></a>
+           </p>
             </div>
                 </div>
             </details>
           </div>
         </nav>
         <section class="section-width py-20 text-white">
-          <h1 class="text-7xl font-bold capitalize mb-3">
+          <h1 class="text-6xl font-bold capitalize mb-3">
             A Lifetime of Discounts? it's genius.
           </h1>
           <p class="body-txt w-1/2">
@@ -178,14 +186,14 @@
     
     <!-- offer deals -->
     <section id="offer" class="mt-20 section-width">
-      <div class="flex justify-between items-center">
+      <div class="flex flex-col md:flex-row gap-5 justify-between items-center text-center md:text-start">
         <div>
       <h3 class="secondary-color-txt sub-header uppercase font-mono">OFFER DEALS</h3>
       <h2 class="section-header mt-3">Flight Offer Deals</h2>
         </div>
         <h6 class="sub-header capitalize color-txt font-bold">Best Price Guarantee <i class="bi bi-check-circle"></i></h6>
       </div>
-      <div class="grid grid-cols-2 mt-20 gap-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
         <div class="col-span-1 rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md">
           <img class="object-cover h-full" src="./images/photo7.jpg" alt="..." />
           <div class="p-5">
@@ -196,7 +204,7 @@
           </div>
         </div>
         <div class="col-span-1">
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md p-5">
           <img class="object-cover" src="./images/photo7.jpg" alt="..." />
           <div>
@@ -248,7 +256,7 @@
             Get rewarded to your travel - Unlock instant savage of 10% or more
             with a free <a class="secondary-color-txt">Fsairline.com</a> account
           </p>
-          <div class="my-10 flex justify-start gap-10">
+          <div class="my-10 flex flex-col md:flex-row justify-start gap-10">
             <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-28">
               <div>
                 <h1 class="section-header tracking-wider font-bold mb-2">5830+</h1>
@@ -275,7 +283,7 @@
        Flynext Package 
      </h4>
      <h2 class="section-header my-3">Your Great Destination</h2>
-     <div class="flex justify-center gap-5 my-10">
+     <div class="flex flex-wrap justify-center gap-5 my-10">
        <button class="btn"><i class="bi bi-vinyl"></i><span class="mx-2">Flight</span><i class="bi bi-airplane"></i></button>
        <button class="btn"><i class="bi bi-vinyl"></i><span class="mx-2">Car Rentals</span><i class="bi bi-car-front-fill"></i></button>
        <button class="btn"><i class="bi bi-vinyl"></i><span class="mx-2">Taxis</span><i class="bi bi-taxi-front-fill"></i></button>
@@ -399,15 +407,15 @@
    <!-- sponsers -->
    <section id="sponsers" class="mt-20 bg-cyan-500">
      <div class="section-width flex overflow-x-scroll scroll-snap-x-mandatory items-center text-center text-white py-20">
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-unity text-9xl"></i> </span>
-       <span class="w-1/4 flex-shrink-0 tracking-wider section-header text-white"><i class="bi bi-tornado text-9xl"></i></span>
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-dropbox text-9xl"></i> </span>
-       <span class="w-1/4 flex-shrink-0 tracking-wider section-header text-white"><img class="object-contain" src="./images/fs-airline.svg" alt="logo" /></span>
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-exclude text-9xl"></i> </span>
-       <span class="w-1/4 flex-shrink-0 tracking-wider section-header text-white"> <i class="bi bi-line text-9xl"></i> </span>
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-circle-half text-9xl"></i> </span>
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-mastodon text-9xl"></i></span>
-       <span class="w-1/4 flex-shrink-0"> <i class="bi bi-yin-yang text-9xl"></i></span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-unity"></i> </span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl tracking-wider section-header text-white"><i class="bi bi-tornado"></i></span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-dropbox"></i> </span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl tracking-wider section-header text-white"><img class="object-contain" src="./images/fs-airline.svg" alt="logo" /></span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-exclude"></i> </span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl tracking-wider section-header text-white"> <i class="bi bi-line"></i> </span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-circle-half"></i> </span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-mastodon"></i></span>
+       <span class="w-1/2 md:w-1/4 lg:w-1/6 flex-shrink-0 text-7xl"> <i class="bi bi-yin-yang"></i></span>
      </div>
    </section>
    
@@ -471,7 +479,7 @@
    <section id="feed" class="mt-20 py-20 bg-white text-center text-center">
      <h4 class="sub-header secondary-color-txt font-mono uppercase">OUR NEWS FEEDS</h4>
      <h2 class="section-header capitalize mt-5">Latest News Update</h2>
-     <div class="mt-20 section-width grid grid-cols-2 gap-10">
+     <div class="mt-20 section-width grid grid-cols-1 lg:grid-cols-2 gap-10">
        <div class="col-span-1 relative">
          <img class="object-cover w-full h-full rounded-xl" src="./images/photo5.jpg" alt="..." />
          <div class="absolute w-full bottom-0 text-white p-10 text-start">
@@ -483,30 +491,30 @@
          </div>
        </div>
        <div class="col-span-1 flex flex-col justify-between gap-10">
-       <div class="flex items-center justify-between gap-5">
-         <img class="object-cover w-1/4 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
-         <div class="text-start">
-           <div class="flex justify-start gap-10">
+       <div class="flex items-center justify-between gap-5 flex-col md:flex-row text-center md:text-start">
+         <img class="object-cover w-1/3 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
+         <div class="">
+           <div class="flex justify-center md:justify-start gap-10">
              <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="sub-header font-bold">Depending on your departure point and destination flight</p>
          </div>
        </div><hr class="border-2"/>
-       <div class="flex items-center justify-between gap-5">
-         <img class="object-cover w-1/4 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
-         <div class="text-start">
-           <div class="flex justify-start gap-10">
+       <div class="flex items-center justify-between gap-5 flex-col md:flex-row text-center md:text-start">
+         <img class="object-cover w-1/3 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
+         <div class="">
+           <div class="flex justify-center md:justify-start gap-10">
              <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
            <p class="sub-header font-bold">Depending on your departure point and destination flight</p>
          </div>
        </div><hr class="border-2"/>
-       <div class="flex items-center justify-between gap-5">
-         <img class="object-cover w-1/4 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
-         <div class="text-start">
-           <div class="flex justify-start gap-10">
+       <div class="flex items-center justify-between gap-5 flex-col md:flex-row text-center md:text-start">
+         <img class="object-cover w-1/3 mx-auto rounded-xl" src="./images/photo5.jpg" alt="..." />
+         <div class="">
+           <div class="flex justify-center md:justify-start gap-10">
              <p class="body-txt"><i class="bi bi-person mr-2"></i>Emaly Watson</p>
              <p class="body-txt"><i class="bi bi-calendar3 mr-2"></i>February 22,2023</p>
            </div>
@@ -519,12 +527,12 @@
    
    <!-- site map -->
    <section id="site-map" class="mt-20 py-20 bg-slate-800">
-     <div class="section-width text-white text-start grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 justify-between">
+     <div class="section-width text-white text-start grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 justify-center">
        <div class="flex flex-col gap-10">
          <img class="object-contain mx-auto" src="./images/fs-airline.svg" alt="logo" />
          <p class="sub-header font-bold">Online to make your journey even more memorable access or meet</p>
          <hr class="border-slate-300">
-         <p class="sub-header flex gap-10">
+         <p class="sub-header flex justify-center gap-10">
            <i class="bi bi-facebook rounded-full bg-black p-3"></i>
            <i class="bi bi-twitter rounded-full bg-black p-3"></i>
            <i class="bi bi-instagram rounded-full bg-black p-3"></i>
@@ -550,7 +558,7 @@
          </div>
          </div>
        </div>
-       <div>
+       <div class="">
          <h3 class="sub-header font-bold my-10">Privacy</h3>
            <div class="flex flex-col gap-5 text-slate-200 body-txt">
              <a class="hover:light-color-txt hover:translate-x-2">Airline fees</a>
@@ -564,7 +572,7 @@
          <p class="text-slate-200 body-txt">PO Box W75 Street lan West new queens</p>
          <p class="sub-header font-bold light-color-txt my-10"><a href="tel:121" >+1246 333 - 0079</a></p>
          <p class="light-color-txt body-txt"><a href="mailto: fsnirjhor2002@gmail.com?subject=fs-airline">fsairline@company.com</a></p>
-        <div class="flex flex-nowrap gap-0 mt-10">
+        <div class="flex gap-0 mt-10">
           <input type="email" name="email" placeholder="Enter your email" class="p-5 body-txt">
           <button class="btn bg-cyan-400 rounded-none sub-header"><i class="bi bi-send"></i></button>
         </div>
@@ -580,6 +588,5 @@
        <img src="./images/cart.png" alt="pay" class="h-10">
      </div>
    </footer>
-   <div class="my-96 py-96"></div>
   </body>
 </html>
