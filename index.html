@@ -122,19 +122,19 @@
           <p >Just from $12</p>
           <p class="font-bold">Flights <i class="bi bi-dash-lg rotate-90 inline-block mx-1"></i> Fsairline stopover</p>
           </div>
-          <div class="my-8 bg-purple-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-0 rounded-lg body-txt">
-            <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-purple-100 color-txt body-txt border-4"/>
-            <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-purple-100 color-txt body-txt border-4"/>
-            <div class="p-5 border-4">
+          <div class="my-8 bg-purple-100 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-0 rounded-lg body-txt overflow-hidden divide-x divide-y divide-cyan-400 border border-cyan-400">
+            <input type="text" name="from" id="from" placeholder="From" class="p-5 bg-purple-100 color-txt body-txt"/>
+            <input type="text" name="to" id="to" placeholder="To" class="p-5 bg-purple-100 color-txt body-txt"/>
+            <div class="p-5">
               <p class="color-txt">Trip</p>
-              <select name="type" class="mt-3 py-2 bg-transparent focus:outline-none text-black">
+              <select name="type" class="mt-3 py-2 bg-transparent focus:outline-none text-black w-full">
   <option value="">Tour Type</option>
   <option value="adventure">Family Tour</option>
   <option value="newest">Newest Item</option>
   <option value="nuture&wild">Nature and Wildlife</option>
 </select>
             </div>
-            <div class="p-5 border-4 flex justify-around gap-3 md:col-span-2">
+            <div class="p-5 flex justify-around gap-3 md:col-span-2">
               <div>
                 <p >Depart</p>
                 <p class="text-black mt-3">07-09-2023</p>
@@ -145,7 +145,7 @@
                 <p class="text-black mt-3">07-09-2023</p>
               </div>
             </div>
-            <div class="p-5 border-4">
+            <div class="p-5">
               <div>
                 <p >Passenger/Class</p>
                 <p class="text-black mt-3">1 Passenger, Economy</p>
@@ -196,7 +196,7 @@
         <h6 class="sub-header capitalize color-txt font-bold">Best Price Guarantee <i class="bi bi-check-circle"></i></h6>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 mt-20 gap-10">
-        <div class="col-span-1 rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000">
+        <div class="col-span-1 rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 h-[900px]">
           <img class="object-cover h-full group-hover:hidden" src="./images/photo7.jpg" alt="..." />
           <div class="p-5">
           <h4 class="sub-header font-bold">Dhaka to Dubai</h4>
@@ -211,7 +211,7 @@
         </div>
         <div class="col-span-1">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5">
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5 h-[450px]">
           <img class="object-cover group-hover:hidden" src="./images/photo8.jpg" alt="..." />
           <div>
           <h4 class="sub-header font-bold">New York To California</h4>
@@ -224,7 +224,7 @@
           <p class="body-txt">Discover</p>
         </div>
         </div>
-        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5">
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5 h-[450px]">
           <img class="object-cover group-hover:hidden" src="./images/photo9.jpg" alt="..." />
           <div>
           <h4 class="sub-header font-bold">Dubai to Maldives</h4>
@@ -237,7 +237,7 @@
           <p class="body-txt">Discover</p>
         </div>
         </div>
-        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5">
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5 h-[450px]">
           <img class="object-cover group-hover:hidden" src="./images/photo10.jpg" alt="..." />
           <div>
           <h4 class="sub-header font-bold">Malaga to Finland</h4>
@@ -250,7 +250,7 @@
           <p class="body-txt">Discover</p>
         </div>
         </div>
-        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5">
+        <div class="rounded-xl overflow-hidden flex flex-col gap-5 bg-white text-start shadow-md hover:bg-cyan-500 hover:justify-center hover:items-center hover:text-white group transition ease-in-out duration-1000 p-5 h-[450px]">
           <img class="object-cover group-hover:hidden" src="./images/photo11.jpg" alt="..." />
           <div>
           <h4 class="sub-header font-bold">Dubai to London</h4>
@@ -278,15 +278,15 @@
             Get rewarded to your travel - Unlock instant savage of 10% or more
             with a free <a class="secondary-color-txt">Fsairline.com</a> account
           </p>
-          <div class="my-10 flex flex-col md:flex-row justify-start gap-10">
-            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-28">
+          <div class="my-10 flex flex-col md:flex-row flex-wrap justify-start gap-10">
+            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-28 max-w-full">
               <div>
                 <h1 class="section-header tracking-wider font-bold mb-2">5830+</h1>
                 <p class="body-txt color-txt capitalize">Happy Customers</p>
               </div>
               <i class="bi bi-people-fill text-7xl color-txt"></i>
             </div>
-            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-28">
+            <div class="bg-white rounded-3xl px-10 py-5 flex justify-between items-center gap-28 max-w-full">
               <div>
                 <h1 class="section-header tracking-wider font-bold mb-2">100%</h1>
                 <p class="body-txt color-txt capitalize">Satisfy Client</p>
@@ -617,7 +617,7 @@
          <p class="sub-header font-bold light-color-txt my-10"><a href="tel:121" >+1246 333 - 0079</a></p>
          <p class="light-color-txt body-txt"><a href="mailto: fsnirjhor2002@gmail.com?subject=fs-airline">fsairline@company.com</a></p>
         <div class="flex gap-0 mt-10">
-          <input type="email" name="email" placeholder="Enter your email" class="p-5 body-txt">
+          <input type="email" name="email" placeholder="Enter your email" class="p-5 body-txt overflow-hidden">
           <button class="btn bg-cyan-400 rounded-none sub-header"><i class="bi bi-send"></i></button>
         </div>
        </div>
